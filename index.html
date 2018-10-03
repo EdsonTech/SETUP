@@ -42,7 +42,24 @@
 
 <!-- Body Start -->
 <body data-spy="scroll" data-target="#navbar" data-offset="98">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1806299402950908"
+  theme_color="#67b868"
+  logged_in_greeting="Olá! como podemos lhe ajudar?"
+  logged_out_greeting="Olá! como podemos lhe ajudar?">
+</div>
   <!-- Loading -->
   <div id="loading">
     <div class="load-circle"><span class="one"></span></div>
@@ -237,7 +254,7 @@
               <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Colaboração</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Infra a Services</a>
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">infraestrutura Agil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="pills-more-tab" data-toggle="pill" href="#pills-more" role="tab" aria-controls="pills-more" aria-selected="false">Softaware a Services </a>
